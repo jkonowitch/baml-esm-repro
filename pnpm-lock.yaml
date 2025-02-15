@@ -7,26 +7,130 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@boundaryml/baml':
+        specifier: ^0.75.0
+        version: 0.75.0
     devDependencies:
       '@tsconfig/node23':
         specifier: ^23.0.0
         version: 23.0.0
+      '@types/node':
+        specifier: ^22.13.4
+        version: 22.13.4
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
 
 packages:
 
+  '@boundaryml/baml-darwin-arm64@0.75.0':
+    resolution: {integrity: sha512-v/IaEBay9X1FmPXomkIYAw24tjDEMuuGBOyXzWb91RErSKpUywNC92u9w5qghMT0WSIO35XESBrzNAU5y+sO5Q==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@boundaryml/baml-darwin-x64@0.75.0':
+    resolution: {integrity: sha512-06iA6sdpRc69GqfwcwinktbVJlhkITAxM+OlsGoEp9OhbXjE4hIKj5Bnu+RTa3JePapXXDoDfNCoHwboGl4O9w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@boundaryml/baml-linux-arm64-gnu@0.75.0':
+    resolution: {integrity: sha512-54BU/AlmEzJ5mZyJKUzdHBF4y/UZDD8n2hFKzasYhUj7XjUj5UjYCZfZ7RFeAYbTC6lvCkz6CViuqMYzvqcXYQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@boundaryml/baml-linux-arm64-musl@0.75.0':
+    resolution: {integrity: sha512-pUeWT2QeQEFjGCs4UkvRV5jSAdTMrg2Te8XSWXV9Dg6rqZs+58WUiG1wNGJIbGPQsTces8oG97+sB9piQ32pIw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@boundaryml/baml-linux-x64-gnu@0.75.0':
+    resolution: {integrity: sha512-xkwdqcD2r+G035xgM0hcCQRZm8gBPSxXq3fnuAZ/dAUeeiMOOM0zqFW8uuKZG+DMoJNCvkv/006wNU/oSXbm7w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@boundaryml/baml-linux-x64-musl@0.75.0':
+    resolution: {integrity: sha512-Enwa/aE05HhkxrIn8eESd+e42O2F8TLUFtrW/dbx/SZMpSogX/PnukNqJIPVAbJsbIo8OmdKFfwsPB1k8icaPg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@boundaryml/baml-win32-x64-msvc@0.75.0':
+    resolution: {integrity: sha512-3h57kx8dZYvZancio+KS3X74i0hQ1vzKEggj2f5VXd88/hP9WJ9ZPic+bzZbAGygTuHzeTqOYGbX4CZK42ep2w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@boundaryml/baml@0.75.0':
+    resolution: {integrity: sha512-T4E+ii//JIILdjoTJ5pN4AR9jL0MWbb/a+Qri4A6GixTBRv9+QxneN67K9vvLHDq4TezR3eyZwLe772HtTGubQ==}
+    engines: {node: '>= 10'}
+    hasBin: true
+
+  '@scarf/scarf@1.4.0':
+    resolution: {integrity: sha512-xxeapPiUXdZAE3che6f3xogoJPeZgig6omHEy1rIY5WVsB3H2BHNnZH+gHG6x91SCWyQCzWGsuL2Hh3ClO5/qQ==}
+
   '@tsconfig/node23@23.0.0':
     resolution: {integrity: sha512-a2qO9QOEWnomKbFFE3XlOJ5za6Sc+XduxQkFpah42enbTPFPaW0QzKw616KDNfmMLPhXMwCw4EHVjcKaFOj/OA==}
+
+  '@types/node@22.13.4':
+    resolution: {integrity: sha512-ywP2X0DYtX3y08eFVx5fNIw7/uIv8hYUKgXoK8oayJlLnKcRfEYCxWMVE1XagUdVtCJlZT1AU4LXEABW+L1Peg==}
 
   typescript@5.7.3:
     resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
 snapshots:
+
+  '@boundaryml/baml-darwin-arm64@0.75.0':
+    optional: true
+
+  '@boundaryml/baml-darwin-x64@0.75.0':
+    optional: true
+
+  '@boundaryml/baml-linux-arm64-gnu@0.75.0':
+    optional: true
+
+  '@boundaryml/baml-linux-arm64-musl@0.75.0':
+    optional: true
+
+  '@boundaryml/baml-linux-x64-gnu@0.75.0':
+    optional: true
+
+  '@boundaryml/baml-linux-x64-musl@0.75.0':
+    optional: true
+
+  '@boundaryml/baml-win32-x64-msvc@0.75.0':
+    optional: true
+
+  '@boundaryml/baml@0.75.0':
+    dependencies:
+      '@scarf/scarf': 1.4.0
+    optionalDependencies:
+      '@boundaryml/baml-darwin-arm64': 0.75.0
+      '@boundaryml/baml-darwin-x64': 0.75.0
+      '@boundaryml/baml-linux-arm64-gnu': 0.75.0
+      '@boundaryml/baml-linux-arm64-musl': 0.75.0
+      '@boundaryml/baml-linux-x64-gnu': 0.75.0
+      '@boundaryml/baml-linux-x64-musl': 0.75.0
+      '@boundaryml/baml-win32-x64-msvc': 0.75.0
+
+  '@scarf/scarf@1.4.0': {}
 
   '@tsconfig/node23@23.0.0': {}
 
+  '@types/node@22.13.4':
+    dependencies:
+      undici-types: 6.20.0
+
   typescript@5.7.3: {}
+
+  undici-types@6.20.0: {}
